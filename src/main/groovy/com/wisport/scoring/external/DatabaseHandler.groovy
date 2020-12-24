@@ -1,9 +1,9 @@
-package com.wisport.scoring
+package com.wisport.scoring.external
 
 class DatabaseHandler {
     public void testConnection(){
         def sql = Sql.newInstance('jdbc:mysql://localhost:3306/rj2001_wi-prod',
-                'rj2001', 'WiSp0rt!', 'com.mysql.jdbc.Driver')
+                'localhost', 'PASSWORD', 'com.mysql.jdbc.Driver')
 
         // Executing the query SELECT VERSION which gets the version of the database
         // Also using the eachROW method to fetch the result from the database
@@ -14,4 +14,5 @@ class DatabaseHandler {
 
         sql.close()
     }
+    // TODO: CRUD methods for Data Objects (Create,Read,Update,Delete) - Members, Results, Events, Scores
 }

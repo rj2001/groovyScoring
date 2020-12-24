@@ -1,5 +1,6 @@
 package com.wisport.scoring
 
+import com.wisport.scoring.external.DatabaseHandler
 import org.springframework.boot.SpringApplication
 import org.springframework.boot.autoconfigure.SpringBootApplication
 
