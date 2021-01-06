@@ -1,9 +1,12 @@
 package com.wisport.scoring.external
 
+import java.sql.*;
+import groovy.sql
+
 class DatabaseHandler {
     public void testConnection(){
-        def sql = Sql.newInstance('jdbc:mysql://localhost:3306/rj2001_wi-prod',
-                'localhost', 'PASSWORD', 'com.mysql.jdbc.Driver')
+        def sql = Sql.newInstance('jdbc:mysql://localhost:3306/MySQL80',
+                'rjochmann', 'Fizzgig74#', 'com.mysql.jdbc.Driver')
 
         // Executing the query SELECT VERSION which gets the version of the database
         // Also using the eachROW method to fetch the result from the database
