@@ -10,8 +10,8 @@ class ScoringApplication {
 	static void main(String[] args) {
 		SpringApplication.run(ScoringApplication, args)
 
-		ProcessResults processedResults = new ProcessResults()
-		processedResults.processResults()
+//		ProcessResults processedResults = new ProcessResults()
+//		processedResults.processResults(
 		DatabaseHandler test = new DatabaseHandler()
 		test.testConnection()
 	}
