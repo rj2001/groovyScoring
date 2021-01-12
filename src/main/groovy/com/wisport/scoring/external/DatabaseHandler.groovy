@@ -26,5 +26,5 @@ class DatabaseHandler {
         sql.execute(sqlstr);
         sql.close()
     }
-    // TODO: CRUD methods for Data Objects (Create,Read,Update,Delete) - Members, Results, Events, Scores
+    // TODO: CRUD methods for Data Objects (Create,Read,Update,Delete) - Members, Racers, Results, Events, Teams, Scores
 }
