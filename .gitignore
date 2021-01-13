@@ -35,3 +35,6 @@ out/
 
 ### VS Code ###
 .vscode/
+
+### DB Connection data ###
+!**/src/main/groovy/com/wisport/scoring/external/DatabaseHandler.groovy
