@@ -18,4 +18,6 @@ class Event {
     String contactEmail
     String contactPhoneNumber
     String socialMediaLink
+    String courseLink
+    String locationMap
 }
