@@ -8,7 +8,7 @@ class Result {
     String racerLastName
     String racerFirstName
     Integer racerAge
-    Enum<String> gender
+    Gender gender
     Integer overallPlace
     Date finishTime
 }

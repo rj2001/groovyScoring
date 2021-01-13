@@ -6,7 +6,7 @@ class Member {
     String wisportId
     String lastName
     String firstName
-    Enum<String> gender
+    Gender gender
     Integer yearOfBirth
     Integer teamId
     Date firstRegisteredDate

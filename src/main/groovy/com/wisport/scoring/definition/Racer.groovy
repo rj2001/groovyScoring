@@ -6,7 +6,7 @@ class Racer {
     String racerId
     String lastName
     String firstName
-    Enum<String> gender
+    Gender gender
     Integer age
     Date createdDate
     Date lastUpdated

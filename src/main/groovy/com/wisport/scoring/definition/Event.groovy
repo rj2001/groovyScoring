@@ -6,7 +6,7 @@ class Event {
     String eventId
     String shortName
     String fullName
-    String eventType
+    EventType eventType
     String addressLine1
     String addressLine2
     String city
