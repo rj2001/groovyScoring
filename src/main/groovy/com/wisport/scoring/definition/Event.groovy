@@ -1,8 +1,15 @@
 package com.wisport.scoring.definition
 
+
+import javax.persistence.Entity
+import javax.persistence.Id
+import javax.persistence.Table
 import java.sql.Date
 
+@Entity
+@Table( name = "event")
 class Event {
+    @Id
     String eventId
     String shortName
     String fullName

@@ -13,7 +13,7 @@ interface EventRepository extends JpaRepository<Event, String> {
     Event findByEventId( String eventId)
     Event findByShortName(String shortName)
 
-    @Query("SELECT * FROM EVENT WHERE EVENT_ID LIKE :seasonYear%")
+    @Query(nativeQuery = true, value = "SELECT * FROM EVENT WHERE EVENT_ID LIKE :seasonYear%")
     List<Event> findBySeason(@Param("seasonYear") Integer year)
 
 }

@@ -12,7 +12,7 @@ interface MemberRepository extends JpaRepository<Member, String> {
     Member findByWisportId(String wisportId)
     List<Member> findByTeamId(Integer teamId)
 
-    @Query("SELECT * FROM MEMBER WHERE LAST_NAME = :lastName")
+    @Query("SELECT m FROM Member m WHERE LAST_NAME = :lastName")
     List<Member> findByLastName(@Param("lastName") String lastName)
 
 }
