@@ -1,6 +1,8 @@
 package com.wisport.scoring.definition
 
 import javax.persistence.Entity
+import javax.persistence.GeneratedValue
+import javax.persistence.GenerationType
 import javax.persistence.Id
 import javax.persistence.Table
 import java.sql.Date
@@ -10,8 +12,9 @@ import java.sql.Time
 @Table( name = 'result')
 class Result {
     @Id
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     Integer resultId
-    String eventId
+    Integer eventId
     String racerId
     String racerLastName
     String racerFirstName

@@ -13,6 +13,7 @@ interface ResultRepository extends JpaRepository<Result, String> {
     List<Result> findByEventId( String eventId)
     List<Result> findByTeamId(Integer teamId)
     Result findByRacerId(String racerId)
+
 //
 //    @Query("SELECT r FROM Resl r WHERE LAST_NAME = :lastName")
 //    List<Result> findByLastName(@Param("lastName") String lastName)
