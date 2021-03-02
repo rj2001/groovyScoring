@@ -10,13 +10,15 @@ import org.springframework.context.annotation.Configuration
 class ScoringApplication {
 
 	@Autowired
-	static MemberRepository testRepository
+	MemberRepository testRepository
 
-	static void main(String[] args) {
+	@Autowired
+	ProcessResults processResults
+
+	public static void main(String[] args) {
 		SpringApplication.run(ScoringApplication, args)
 
-		ProcessResults processedResults = new ProcessResults()
-		processedResults.parseResultsFile(  "FlambeauTT.csv", 202021 )
+		//processResults.parseResultsFile(  "FlambeauTT.csv", 202021 )
 	}
 
 }

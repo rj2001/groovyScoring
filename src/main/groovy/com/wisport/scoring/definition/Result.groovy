@@ -19,19 +19,18 @@ class Result {
     String racerLastName
     String racerFirstName
     Integer racerAge
-    Gender gender
+    Gender racerGender
     Integer teamId
     Integer overallPlace
     String finishTime
 
-    Result (eventId, racerId, racerLastName, racerfirstName, racerAge, gender, teamId, overallPlace, finishTime){
-        this.resultId = resultId
+    Result (eventId, racerId, racerLastName, racerfirstName, racerAge, racerGender, teamId, overallPlace, finishTime){
         this.eventId = eventId
         this.racerId = racerId
         this.racerLastName = racerLastName
         this.racerFirstName = racerfirstName
         this.racerAge = racerAge
-        this.gender = gender
+        this.racerGender = racerGender
         this.teamId = teamId
         this.overallPlace = overallPlace
         this.finishTime = finishTime
