@@ -20,6 +20,9 @@ dependencies {
 	compile group: 'mysql', name: 'mysql-connector-java', version: '8.0.22'
 	runtime "mysql:mysql-connector-java:8.0.22"
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+	testImplementation 'com.googlecode.junit-toolbox:junit-toolbox:2.4'
+	testImplementation "org.spockframework:spock-spring:2.0-M4-groovy-3.0"
 }
 
 test {
